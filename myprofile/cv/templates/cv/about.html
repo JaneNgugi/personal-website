@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% load static %} {% block title %} About-Contact {% endblock %} {% block css_files %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<link rel="stylesheet" href="{% static 'style.css' %}">{% endblock %} {% block content %}
+<section class="page-header">
+    
+</section>
+
+<section class="grid_content">
+
+    <div class="grid_left">
+        <div class="container ">
+            <div class="header-container d-flex align-items-center ">
+                <div class="logo mr-auto ">
+                    <!-- <h1 class="text-light "><a href="index.html "><span> Profile</span></a></h1> -->
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html "><img src="assets/img/logo.png " alt=" " class="img-fluid "></a>-->
+                </div>
+                <nav class="nav-menu d-none d-lg-block ">
+                    <ul>
+                        <li><a href="{% url 'index' %}">home</a></li>
+                    </ul>
+                    
+
+                </nav>
+                <!-- .nav-menu -->
+            </div>
+            <!-- End Header Container -->
+        </div>
+
+
+    </div>
+</section>
+
+
+<br>
+<section id="footer">
+    Copyright © janenwebsite.com
+</section>
+
+
+{% endblock %}

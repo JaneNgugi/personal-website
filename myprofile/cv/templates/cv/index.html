@@ -1,0 +1,273 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Home-Profile {% endblock %} {% block css_files %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'style.css' %}">{% endblock %} {% block content %}
+
+
+<section class="grid_content">
+
+    <div class="grid_left">
+        <div class="container ">
+            <div class="header-container d-flex align-items-center ">
+                <div class="logo mr-auto ">
+                    <!-- <h1 class="text-light "><a href="index.html "><span> Profile</span></a></h1> -->
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html "><img src="assets/img/logo.png " alt=" " class="img-fluid "></a>-->
+                </div>
+                <nav class="nav-menu d-none d-lg-block ">
+                    <ul>
+                        <li><a href="{% url 'about' %}">about</a></li>
+                    </ul>
+                    <ul>
+                        <br>
+                        <li><a href="#skills ">Skills</a></li>
+                        <li><a href="#background ">background</a></li>
+                        <li><a href="#speciality ">speciality</a></li>
+                    </ul>
+
+                </nav>
+                <!-- .nav-menu -->
+            </div>
+            <!-- End Header Container -->
+        </div>
+
+
+    </div>
+</section>
+<section id="home" class="grid_right">
+    <br>
+    <div class="hero-image">
+        <div class="hero-text">
+            <br>
+            <br>
+
+            <h1 style="font-size:50px;color:purple;">I am Jane Ngugi</h1>
+            <p> I am adaptable, self-driven, and an ambitious young Christian lady with strong work ethic and ability to thrive in team-based or individually motivated settings</p>
+
+            <p>My previous coursework assignments have allowed me to develop skills in languages like Python Programing-Django framework, PHP, HTM and CSS. I also gained abilities in computer skills (Microsoft Word, PowerPoint, Excel), computer networks,
+                website and software development (visual studio code).</p>
+            <p>I am eager to learn and apply my critical thinking, observation and planning skills in areas or tasks assigned.</p>
+
+
+            <br><br><br>
+            <br>
+        </div>
+    </div>
+</section>
+
+<!-- <section> <span id="content ">
+       <div class="grid_right" ><div id="about">
+            <span id="header">
+    <h1> About Me</h1></span>
+    </div>
+
+    <br>
+
+
+
+    </span>
+
+    </div>
+</section> -->
+<section id="myskills">
+
+    <div class="grid_right "><br> <br>
+        <br>
+        <br>
+        <div id="skills"> <span id="header">
+        <h1>soft and hard skills</h1></span>
+        </div>
+        <span id="content">
+<table >
+        <tr>
+            <th>Languages Skilled</th>
+            <th>Hard Skills</th>
+            <th>Soft Skills</th>
+        </tr>
+        <tr><td>Python Programming</td>
+                
+            <td>Microsoft Word 2016</td>
+            <td>Active listening</td>
+        </tr>
+        <tr><td>PHP</td>
+                <td>Microsoft Excel 2016</td>
+            <td>Communication</td>
+            
+        </tr>
+        <tr><td>html5</td>
+                
+            <td>Microsoft PowerPoint 2016</td>
+            <td>Working in groups</td>
+        </tr>
+        <tr><td>css3</td>
+               
+            <td>Microsoft Project 2016</td>
+            <td>Problem solving</td>
+        </tr>
+        <tr>
+             <td>sql-queries</td>
+            <td>Microsoft Sql server 2014</td>
+            <td>Tactical</td>
+        </tr>
+        <tr>
+             <td></td>
+            <td> Xampp Control Panel</td>
+            <td>Poised under pressure</td>
+        </tr>
+        <tr> <td></td>
+            
+            <td>Visual Studio Code</td>
+        </tr>
+        <tr><td></td>
+            
+            <td>Microsoft Visio 2016</td>
+        </tr>
+        <tr><td></td>
+            
+            <td>Star UML</td>
+        </tr>
+        <tr><td></td>
+            
+            <td>GitHub</td>
+        </tr>
+    </table>
+
+
+
+        </span>
+
+    </div>
+</section>
+<section>
+    <div class="grid_right" id=" ">
+        <div id="background"> <span id="header">
+            <h1>Education Background</h1>
+            </span></div>
+
+        <span id="content">
+
+
+        <table >
+        <tr>
+            <th>Module</th>
+            <th>Institution</th>
+            <th>Qualification</th>
+            <th>Year Ended</th>
+
+        </tr>
+        <tr>
+            <td>PYTHON PROGRAMMING WITH DJANGO-FRAMEWORK</td>
+            <td>COMPUTER PRIDE - NAIROBI </td>
+            <td>CERTIFICATE</td>
+            <td>DECEMBER 2021</td>
+
+        </tr>
+        <tr>
+        
+            <td>NCC LEVEL 5 DIPLOMA IN COMPUTING</td>
+            <td>COMPUTER PRIDE - NAIROBI</td>
+            <td>DIPLOMA</td>
+            <td>APRIL 2021</td>
+
+        </tr>
+            <td>NCC LEVEL 4 DIPLOMA IN COMPUTING</td>
+            <td>COMPUTER PRIDE - NAIROBI</td>
+            <td>DIPLOMA</td>
+            <td>DECEMBER 2019</td>
+
+        </tr>
+        <tr>
+            <td>NCC LEVEL 3 DIPLOMA IN COMPUTING</td>
+            <td>COMPUTER PRIDE - NAIROBI</td>
+            <td>DIPLOMA</td>
+            <td>DECEMBER 2018</td>
+
+        </tr>
+        <tr>
+            <td>INTERNATIONAL COMPUTER DRIVING LICENCE (ICDL)</td>
+            <td>COMPUTER PRIDE - NAIROBI</td>
+            <td>CERTIFICATE</td>
+            <td>JUNE 2018</td>
+
+        </tr>
+        <tr>
+            <td>KENYA CERTIFICATE OF SECONDARY EDUCATION</td>
+            <td>KIHARA HIGH SCHOOL - KIAMBAA</td>
+            <td>CERTIFICATE</td>
+            <td>NOV 2017</td>
+
+        </tr>
+        <tr>
+            <td>KENYA CERTIFICATE OF PRIMARY EDUCATION</td>
+            <td>KAMUIRU PRIMARY SCHOOL - KIAMBA</td>
+            <td>CERTIFICATE</td>
+            <td> NOVEMBER 2013</td>
+
+        </tr>
+
+    </table>
+    </span>
+
+
+    </div>
+
+</section>
+<section>
+    <div class="grid_right">
+        <div id="speciality"> <span id="header">
+        <h1> speciality and interest</h1></span></div>
+
+
+        <table>
+            <tr>
+
+                <th>ACTIVITIES AND INTERESTS</th>
+                <th>SPECIALIST IN</th>
+
+            </tr>
+            <tr>
+
+                <td>Reading books</td>
+                <td>Website developer(Backend)</td>
+
+            </tr>
+            <tr>
+
+                <td>Hiking</td>
+                <td>Data-input</td>
+
+            </tr>
+            <tr>
+
+                <td>Swimming</td>
+                <td>Computer Repair</td>
+
+            </tr>
+            <tr>
+
+                <td></td>
+                <td>Virtualization</td>
+
+            </tr>
+            <tr>
+
+                <td></td>
+                <td>Virtualization</td>
+
+            </tr>
+
+        </table>
+
+
+
+    </div>
+</section>
+</div>
+
+
+<br>
+<section id="footer">
+    Copyright © janenwebsite.com
+</section>
+
+
+{% endblock %}
